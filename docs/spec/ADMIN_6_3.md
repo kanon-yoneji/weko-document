@@ -100,7 +100,10 @@
               - 件名：\[○○機関リポジトリ\]YYYY.MM-yyyy.mm statistics report  
                 ※YYYY.MMは集計月(from), yyyy.mmは集計月(to)を表示
             
-              - メールのテンプレート： https://github.com/RCOSDP/weko/blob/v0.9.22/modules/weko-admin/weko\_admin/templates/weko\_admin/email\_templates/site\_license\_report.html
+              - メールのテンプレート： weko-admin.weko_admin.templates.weko_admin.email_templates.site_license_report.html
+
+              - メール本文に含まれる「お問い合わせ窓口 (E-mail) 」：
+                【Administration \> 設定 (Setting) \> メール送信 (Mail)画面】の【デフォルト送信元 (Default sender)】に設定されたメールアドレスを表示
             
               - 本文：サイトライセンス利用統計の内容
                 
@@ -219,7 +222,7 @@
             
               - > サイトライセンス機関のアクセスレポートが取得できなかった場合は、各項目を０件とする。
         
-          - 送信が失敗した場合は、エラーログを出力する。送信結果にかかわらず、’finish’を返す。
+          - 送信が失敗した場合は、エラーログを出力する。
 
 <!-- end list -->
 
